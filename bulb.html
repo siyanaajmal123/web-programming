@@ -1,0 +1,22 @@
+<html>
+<html lang="en">
+<head>
+<title>Bulb ON/OFF</title>
+</head>
+<body>
+<script>
+function turnOnOff(){
+let image=document.getElementById("Image");
+if(image.src.includes("ONbulb.jpg"))
+{
+image.src="offmode.jpg";
+}
+else{
+image.src="ONbulb.jpg";
+}
+}
+</script>
+<img id="Image" onclick="turnOnOff()" src="offmode.jpg" alt="Bulb" width="200"/>
+<p>Click on the bulb to turn it ON and OFF</p>
+</body>
+</html>
