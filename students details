@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>student</title>
+</head>
+
+<body>
+<h2> STUDENT DETAILES</h2>
+<table border="1" cell padding="3" cell spacing="3">
+<tr>
+<th>STUDENT NAME</th>
+<th>NUMBER</th>
+<th>MARKES</th>
+</tr>
+
+<tr>
+<td>Adithyan ER</th>
+<td>2028</th>
+<td>47</th>
+</tr>
+
+<tr>
+<td>Arjun P</th>
+<td>2029</th>
+<td>69</th>
+</tr>
+
+<tr>
+<td>Hari Govind</th>
+<td>2032</th>
+<td>65</th>
+</tr>
+</table>
+
+</body>
+</html>
