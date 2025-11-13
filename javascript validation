@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Welcome To Login Form</title>
+        <script>
+            function login()
+            {
+                var uname=document.getElementById("email").value;
+                 var pwd=document.getElementById("pwd1").value;
+                 var filter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)([a-zA-Z0-9]{2,4})+$/;
+                 if(uname=="")
+                 {
+                 alert("please enter username");
+            }
+                 else if(pwd=="")
+                 {
+                 alert("Enter the password");
+                 }
+                 else if(!filter.test(uname))
+                 {
+                 alert("Enter valid email id.");
+                 }
+                 else if(pwd.length<6||pwd.length>6)
+                 {
+                 alert("password min and max length is 6.");
+                 }
+    
+                 else
+                 {
+                 alert("Login Succes");
+                 }
+            }
+                 function clearFunc()
+                 {
+                 document.getElementById("Email").value="";
+                 document.getElementById("pwd1").value="";
+
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="h=tag">
+                <h2 align="center">Welcome To My Account Login</h2>
+                </div>
+                <div class="login">
+                    <table cellspacing="2"align="center".cellpadding="8"border="0">
+                        <tr>
+                            <td>Enter User Name:</td>
+                            <td><input type="text" placeholder="Enter user name here."id="email" class="tb"/></td>
+                            </tr>
+                            <tr>
+                                <td>Enter Password:</td>
+                            <td><input type="text" placeholder="Enter password here."id="pwd1" class="tb"/></td>
+                            </tr>
+                            <tr><td></td>
+                                <td>
+                                    <input type="submit"value="Reset"onclick="clearFun()"class="btn"/>
+                                    <input type="submit"value="Login"class="btn"onclick="login()"/></td></tr>
+                    </table>
+                </div>
+        </div>
+    </body>                
+         </html>
